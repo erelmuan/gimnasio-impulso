@@ -4,19 +4,134 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clases y actividades | Gimnasio Impulso</title>
+  <!-- 1. Vinculación al CSS -->
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-  <header>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="clases.html">Clases</a></li>
-      <li><a href="planes.html">Planes</a></li>
-      <li><a href="entrenadores.html">Entrenadores</a></li>
-    </ul>
-  </nav>
-</header>
 
-  
+  <!-- Topbar / Navegación -->
+  <header class="topbar">
+    <div class="logo">
+      <span>🏋️</span> Gimnasio Impulso
+    </div>
+    <nav class="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="clases.html" class="activo">Clases</a>
+      <a href="planes.html">Planes</a>
+      <a href="entrenadores.html">Entrenadores</a>
+    </nav>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="contenedor">
+    
+    <!-- Introducción -->
+    <section class="seccion">
+      <span class="tag">Sección Clases</span>
+      <h1>Clases y Actividades</h1>
+      <p class="lead"><strong>Alumno responsable:</strong> Anibal Ignacio Garcia Barrera</p>
+      <p class="lead">En Gimnasio Impulso contamos con una amplia variedad de clases grupales y entrenamientos guiados para todos los niveles. Nuestro objetivo es ayudarte a mantener la motivación, mejorar tu salud y alcanzar tus metas físicas en un ambiente dinámico y equipado.</p>
+    </section>
+
+    <!-- 2. Tarjetas de Clases envueltas correctamente en .grid -->
+    <section class="seccion">
+      <div class="titulo">
+        <h2>Nuestras Clases</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card"> 
+          <div class="icono">💪</div>
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400" alt="Clase de Musculación">
+          <h3>Musculación y Fuerza</h3>
+          <p>Aumenta tu masa muscular y resistencia con rutinas adaptadas a tus objetivos a cargo de Laura Giménez.</p>
+        </article>
+
+        <article class="card">
+          <div class="icono">🏃</div>
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400" alt="Clase de Cross Training">
+          <h3>Cross Training</h3>
+          <p>Entrenamiento de alta intensidad que combina ejercicios funcionales y fuerza coordinados por Marcos Rossi.</p>
+        </article>
+
+        <article class="card">
+          <div class="icono">🧘</div>
+          <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400" alt="Clase de Yoga">
+          <h3>Yoga y Flexibilidad</h3>
+          <p>Posturas de elongación, técnicas de respiración y movilidad articular guiadas por Sofía Benítez.</p>
+        </article>
+
+        <article class="card">
+          <div class="icono">🚴</div>
+          <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=400" alt="Clase de Spinning">
+          <h3>Spinning</h3>
+          <p>Mejora tu capacidad cardiovascular con entrenamiento sobre bicicleta bajo ritmo dinámico con Marcos Rossi.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Cronograma de Horarios -->
+    <section class="seccion">
+      <div class="titulo">
+        <h2>Cronograma de Horarios</h2>
+      </div>
+      
+      <div class="nota">
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--borde);">
+              <th style="padding: 12px; color: var(--oscuro);">Actividad</th>
+              <th style="padding: 12px; color: var(--oscuro);">Lunes a Viernes</th>
+              <th style="padding: 12px; color: var(--oscuro);">Sábados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--borde);">
+              <td style="padding: 12px;"><strong>Musculación y Fuerza</strong></td>
+              <td style="padding: 12px;">07:00 - 22:00 hs (Continuo)</td>
+              <td style="padding: 12px;">09:00 - 18:00 hs</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--borde);">
+              <td style="padding: 12px;"><strong>Cross Training</strong></td>
+              <td style="padding: 12px;">07:00 - 22:00 hs (Continuo)</td>
+              <td style="padding: 12px;">09:00 - 18:00 hs</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--borde);">
+              <td style="padding: 12px;"><strong>Spinning</strong></td>
+              <td style="padding: 12px;">08:00 - 10:00 hs / 18:00 - 20:00 hs</td>
+              <td style="padding: 12px;">10:00 - 12:00 hs</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px;"><strong>Yoga y Flexibilidad</strong></td>
+              <td style="padding: 12px;">09:00 - 11:00 hs / 17:00 - 19:00 hs</td>
+              <td style="padding: 12px;">09:00 - 11:00 hs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+      
+    <!-- 4. Recomendaciones -->
+    <section class="seccion">
+      <div class="titulo">
+        <h2>Recomendaciones para participar de las clases</h2>
+      </div>
+      
+      <div class="nota">
+        <p>Para garantizar una experiencia segura y efectiva durante las clases, te recomendamos seguir estas pautas:</p>
+        <ul class="check">
+          <li>Llegar 10 minutos antes del inicio de las clases con profesor para la entrada en calor.</li>
+          <li>Traer toalla personal y botella de agua para mantener la hidratación en todo momento.</li>
+          <li>Utilizar calzado deportivo adecuado y ropa cómoda de entrenamiento.</li>
+          <li>Notificar al profesor o entrenador previo a la clase sobre cualquier molestia física o lesión.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer contenedor">
+    <p>&copy; 2026 Gimnasio Impulso - Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
